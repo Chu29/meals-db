@@ -1,20 +1,12 @@
 input {
-  font-size: 18px;
-  padding: 5px 10px;
-  padding-left: 35px;
-  outline: none;
-  background: #ffffff;
-  color: #000000;
-  border: 1px solid #c4d1eb;
-  border-radius: 5px;
-  box-shadow: 3px 3px 2px 0px #e2e2e2;
-  transition: 0.3s ease;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+	font-size: 18px;
+	padding: 5px 10px;
+	padding-left: 35px;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #C4D1EB;
+	border-radius: 5px;
+	box-shadow: 3px 3px 2px 0px #E2E2E2;
+	transition: .3s ease;
 }
