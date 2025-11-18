@@ -1,6 +1,10 @@
+import MealCard from "../components/MealCard";
 
-export default function MealsPage() {
+export default function CategoryPage() {
   return (
-    <div>MealsPage</div>
-  )
+    <div>
+      <h1>Meals Page</h1>
+      <MealCard />
+    </div>
+  );
 }

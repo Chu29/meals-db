@@ -1,14 +1,14 @@
 import { useState } from "react";
 import "./Header.css";
 import { useQuery } from "@tanstack/react-query";
-import { searchMealsByName } from "../../services/meal.service";
+import { searchMealByName } from "../../services/meal.service";
 
 function SearchBar() {
   const [mealName, setMealName] = useState();
 
   const { data } = useQuery({
     queryKey: ["search", mealName],
-    queryFn: () => searchMealsByName(mealName),
+    queryFn: () => searchMealByName(mealName),
   });
 
   console.log("Search Data", data);
