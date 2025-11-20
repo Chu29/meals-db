@@ -1,8 +1,12 @@
+import Header from "../components/Header/Header";
 import MealDetailCard from "../components/MealDetails/MealDetailCard";
 export default function MealDetailsPage() {
   return (
     <div>
-      <h1>Meal Details</h1>
+      <div className="header">
+        <h1>MealDB.</h1>
+        <Header />
+      </div>
       <MealDetailCard />
     </div>
   );

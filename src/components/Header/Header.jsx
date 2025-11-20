@@ -1,29 +1,5 @@
-import { useState } from "react";
+import SearchBar from "./SearchBar";
 import "./Header.css";
-import { useQuery } from "@tanstack/react-query";
-import { searchMealByName } from "../../services/meal.service";
-
-function SearchBar() {
-  const [mealName, setMealName] = useState();
-
-  const { data } = useQuery({
-    queryKey: ["search", mealName],
-    queryFn: () => searchMealByName(mealName),
-  });
-
-  console.log("Search Data", data);
-
-  return (
-    <form className="search-bar" onSubmit={(event) => event.preventDefault}>
-      <input
-        type="text"
-        placeholder="Search for a meal..."
-        value={mealName}
-        onChange={(event) => setMealName(event.target.value)}
-      />
-    </form>
-  );
-}
 
 export default function Header() {
   return (
