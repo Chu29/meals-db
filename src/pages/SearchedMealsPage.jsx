@@ -5,14 +5,12 @@ import Header from "../components/Header/Header";
 
 export default function SearchedMealsPage() {
   const navigate = useNavigate();
-  let query = useParams();
+  let { name } = useParams();
 
   const { data, isPending, isError, error } = useQuery({
-    queryKey: ["search", query.name],
-    queryFn: () => searchMealByName(query.name),
+    queryKey: ["search", name],
+    queryFn: () => searchMealByName(name),
   });
-
-  console.log(data);
 
   if (isPending) return <span>Loading...</span>;
   if (isError) return <span>Error: {error.message}</span>;
