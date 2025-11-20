@@ -24,10 +24,12 @@ export const getMealDetailsById = async (id) => {
 };
 
 export const searchMealByName = async (name) => {
+  if (!name) return [];
   const res = api.get("search.php", {
     searchParams: {
       s: name,
     },
   });
+
   return res.json();
 };
