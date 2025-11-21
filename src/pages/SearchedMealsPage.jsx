@@ -23,6 +23,7 @@ export default function SearchedMealsPage() {
             <h1>MealDB.</h1>
             <Header />
           </div>
+            <h1 className="title">Meals <span className="caption" >Click on a card to see details about a meal</span></h1>
           <div className="category-cards-container">
             {data.meals.map((meal) => (
               <div

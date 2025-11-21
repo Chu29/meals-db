@@ -33,3 +33,12 @@
 .category-card-body:hover .category-card-title {
   color: #ff6600;
 }
+
+.title {
+  text-align: center;
+}
+.caption {
+  color: #ff6600;
+  font-size: 1rem;
+  font-style: italic;
+}

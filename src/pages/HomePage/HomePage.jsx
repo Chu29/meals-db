@@ -10,6 +10,7 @@ export default function HomePage() {
         <Header />
       </div>
       <main className=".category-cards-container">
+      <h1 className="title">Meals Categories <span className="caption" >Click on a card to see meals under each category</span></h1>
         <MealCategoryCard />
       </main>
     </>
