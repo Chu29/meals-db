@@ -1,6 +1,12 @@
+import SearchBar from "./SearchBar";
+import "./Header.css";
 
 export default function Header() {
   return (
-    <div>Header</div>
-  )
+    <>
+      <header className="header">
+        <SearchBar />
+      </header>
+    </>
+  );
 }
